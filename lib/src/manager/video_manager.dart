@@ -115,7 +115,7 @@ class FlickVideoManager extends ChangeNotifier {
     _notify();
 
     // Dispose the old controller after 5 seconds.
-    Future.delayed(Duration(seconds: 1), () => oldController?.dispose());
+    Future.delayed(Duration.zero, () => oldController?.dispose());
 
     // Initialize the video if not initialized
     // (User can initialize the video while passing to flick).
